@@ -78,27 +78,25 @@ public class Main {
 
         System.out.println("         ");
         System.out.println("Задача 8 ");
-        int TheYearOfTheComet1 = 1817;
-        int p = 0;
-        while ( p<3 ){
-            p++;
-            TheYearOfTheComet1 = TheYearOfTheComet1+79;
-            System.out.println(TheYearOfTheComet1);
+        int comeTrajectory = 79;
+        for ( int year1 = 1822; year1 <= 2122; year1++) {
+            if (year1 % comeTrajectory == 0) {
+                System.out.println(year1);
+            }
         }
-
 
 
         System.out.println("         ");
         System.out.println("Задача 9 ");
-        int P=2;
-        int m=1;
-        int PR=0;
+        int theFirstMultiplier =2;
+        int multiplier2 =1;
+        int composition=0;
         int S = 0;
         while ( S<10 ){
             S++;
-            PR= P*m;
-            System.out.println(P+"*"+m+"="+PR);
-            m=m+1;
+            composition= theFirstMultiplier* multiplier2;
+            System.out.println(theFirstMultiplier+"*"+ multiplier2+"="+composition);
+            multiplier2= multiplier2+1;
         }
     }
 }
