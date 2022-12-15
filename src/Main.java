@@ -15,38 +15,38 @@ public class Main {
 
         System.out.println("         ");
         System.out.println("Задача  2 ");
-        var I=0;
-        while (I<+10 ) {
-            I++;
-            System.out.print (I+" ");
+        int lin1 =0;
+        while  (lin1<+10) {
+        lin1++;
+            System.out.print ( lin1+" ");
         }
         System.out.println("         ");
-        var R=11;
-        while (R>1 ) {
-            R--;
-            System.out.print (R+" ");
+        int  lin2=11;
+        while ( lin2>1 ) {
+        lin2--;
+            System.out.print ( lin2+" ");
         }
 
 
         System.out.println("         ");
         System.out.println("         ");
         System.out.println("Задача 3 ");
-        int Y = 12_000_000;
+        int city = 12_000_000;
         int born = 17;
         int death = 8;
         int dif = born-death;
-        int l = 0;
-        while ( l < 10 ) {
-            l++;
-            Y += Y*dif/1000;
-            System.out.println ("Год "+l+", численность населения составляет " +Y);
+        int Year = 0;
+        while ( Year < 10 ) {
+            Year++;
+            city += city*dif/1000;
+            System.out.println ("Год "+Year+", численность населения составляет " +city);
         }
 
 
         System.out.println("         ");
         System.out.println("Задача 4 ");
         int amount = 15000;
-        var month = 0;
+        int month = 0;
         while ( amount < 12_000_000 ) {
             amount = amount + amount/100*7;
             month++;
@@ -58,7 +58,7 @@ public class Main {
         System.out.println("         ");
         System.out.println("Задача 5 и 6 ");
         int amount2 = 15000;
-        var month2 = 0;
+        int month2 = 0;
         for ( month2 = 0; month2 < 108; month2++) {
             amount2 = amount2 + amount2 / 100 * 7;
             if (month2 % 6 == 0) {
